@@ -1,0 +1,14 @@
+@use '../src/styles/mixins' as *;
+
+.contact-hero {
+  padding: var(--spacing-lg) 0;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+}

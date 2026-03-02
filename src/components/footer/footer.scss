@@ -1,0 +1,40 @@
+@use '../../styles/mixins' as *;
+
+.footer {
+  background-color: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing-md) 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__copy {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+  }
+
+  &__nav {
+    display: flex;
+    gap: var(--spacing-md);
+  }
+
+  &__link {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

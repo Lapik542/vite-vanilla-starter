@@ -1,0 +1,39 @@
+// ===== Colors =====
+$color-primary:    #2563eb;
+$color-secondary:  #1e40af;
+$color-text:       #1f2937;
+$color-text-light: #6b7280;
+$color-bg:         #ffffff;
+$color-bg-alt:     #f9fafb;
+$color-border:     #e5e7eb;
+
+// ===== Typography =====
+$font-base: 'Inter', sans-serif;
+
+// ===== Spacing =====
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+
+// ===== Layout =====
+$container-width: 1200px;
+
+// ===== CSS Custom Properties (використовуються в HTML через var()) =====
+:root {
+  --color-primary:    #{$color-primary};
+  --color-secondary:  #{$color-secondary};
+  --color-text:       #{$color-text};
+  --color-text-light: #{$color-text-light};
+  --color-bg:         #{$color-bg};
+  --color-bg-alt:     #{$color-bg-alt};
+  --color-border:     #{$color-border};
+
+  --font-base: #{$font-base};
+
+  --container-width: #{$container-width};
+  --spacing-xs: #{$spacing-xs};
+  --spacing-sm: #{$spacing-sm};
+  --spacing-md: #{$spacing-md};
+  --spacing-lg: #{$spacing-lg};
+}

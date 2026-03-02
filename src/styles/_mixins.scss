@@ -1,0 +1,16 @@
+// ===== Breakpoints =====
+$bp-mobile: 768px;
+$bp-tablet: 1024px;
+
+// ===== Media Query Mixins =====
+@mixin mobile {
+  @media (max-width: #{$bp-mobile}) { @content; }
+}
+
+@mixin tablet {
+  @media (max-width: #{$bp-tablet}) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: #{$bp-tablet + 1px}) { @content; }
+}
